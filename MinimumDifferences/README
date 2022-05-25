@@ -2,7 +2,7 @@
 
 For this task the program starts with the implementation of the CommandLineRunner and within its run method I wrote my solution.
 
-First it reads the input data and savesit in a variable as a string.
+First it reads the input data and saves it in a variable as a string.
 
 Then, in a "while" loop, the program receives and executes the functionalities of the code until 
 "Exit" as input data is received (which is not case sensitive).
