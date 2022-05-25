@@ -1,4 +1,4 @@
-##Fibonacci
+###Fibonacci
 
 #The program reads an image file and uses it for a template. To read the image file it uses BufferedImage.
 #When the program reads the image, it sets the dimensions depending on how many lines will follow; it creates a black rectangle, which will perfectly fit all the lines that will be written. Each line represents i-th Fibonacci number; The height of the image changes by adding 32 * (M - N + 1)
