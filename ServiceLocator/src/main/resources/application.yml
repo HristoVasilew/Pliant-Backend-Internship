@@ -7,9 +7,9 @@ logging:
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    password: 1234
+    password: ####
     url: jdbc:mysql://localhost:3306/service_locator?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC
-    username: root
+    username: #####
   jpa:
     hibernate:
       ddl-auto: update
