@@ -1,14 +1,13 @@
 ## Fibonacci
 
 The program reads an image file and uses it for a template. To read the image file it uses BufferedImage.
-When the program reads the image, it sets the dimensions depending on how many lines will follow; it creates a black rectangle, which will perfectly fit all the lines that will be written. Each line represents i-th Fibonacci number; The height of the image changes by adding 32 * (M - N + 1)
-(32 is the required space between each line)
+When the program reads the image, it sets the dimensions depending on how many lines will follow; it creates a black rectangle,
+which will perfectly fit all the lines that will be written. Each line represents i-th Fibonacci number;
+The height of the image changes by adding 32 * (M - N + 1); (32 is the required space between each line)
 
-After that, using a method I've created, it will 
-directly add the i-th Fibonacci number to the photo. 
+After that, using a method I've created, it will directly add the i-th Fibonacci number to the photo. 
 
 Then, it saves the photo by submitting the new version, the type of it and the destination (where it should be saved).
 
-To run the program you only need to put 
-the correct paths instead of "Some Path" 
+To run the program you only need to put the correct paths instead of "Some Path" 
 in Engine Class (14,15 row) - where to get the photo from and where to save it.
