@@ -1,29 +1,24 @@
 #Minimum Differences
 
-For this task the program starts with the implementation 
-of the CommandLineRunner and within 
-its run method I wrote my solution.
+For this task the program starts with the implementation of the CommandLineRunner and within its run method I wrote my solution.
 
-First it reads the input data and saves
-it in a variable as a string.
+First it reads the input data and savesit in a variable as a string.
 
 Then, in a "while" loop, the program receives and executes the functionalities of the code until 
 "Exit" as input data is received (which is not case sensitive).
 
-In the loop the program performs the following 
-actions:
-converts the string input into a class,
-which will be then submitted to a method "validateInputData"; which validates the input data according to the specified conditions.
+In the loop the program performs the following actions:
+converts the string input into a class,which will be then submitted to a method "validateInputData"; 
+which validates the input data according to the specified conditions.
 
-If there is no invalid data the program then submits the data to a method "stretchSprints". In the stretch sprints method the program calls the fillVariantsOfStretch 
-method by giving a number that corresponds to the 
-number of possible variants that can be obtained. the program also gives n (sprints), an array (to write each variant there) and one more array (to collect the data).
+If there is no invalid data the program then submits the data to a method "stretchSprints".
+In the stretch sprints method the program calls the fillVariantsOfStretch method by giving a number that corresponds to the 
+number of possible variants that can be obtained. The program also gives n (sprints), an array (to write each variant there) and one more array (get data from).
 
-After all the possible options 
-in the "for" loop the program performs the necessary 
-actions to get the sum of the elements. If the sum is smaller than the previous one, then it is overwritten. After that the program saves the new positions of the two arrays.
+After all the possible options in the "for" loop the program performs the necessary actions to get the sum of the elements.
+If the sum is smaller than the previous one, then it is overwritten. After that the program saves the new positions of the two arrays.
 
-At the end the program returns a class 
-that anchors the output parameters and using the toString method prints the output to the console. After that, the program will be waiting for a new input or command "Exit".
+At the end the program returns a class that anchors the output parameters and using the toString method prints the output to the console.
+After that, the program will be waiting for a new input or command "Exit".
 
 To run the program you need only to paste the input data in console.
