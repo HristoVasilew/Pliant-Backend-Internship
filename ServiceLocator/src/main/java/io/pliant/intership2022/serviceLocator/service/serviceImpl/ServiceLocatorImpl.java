@@ -90,6 +90,8 @@ public class ServiceLocatorImpl implements ServiceLocator {
         }catch (ErrorInstantiatingException e){
             throw new ErrorInstantiatingException(serviceClass.getSimpleName());
         }
+        
+        return resultObject;
     }
 
     @Override
