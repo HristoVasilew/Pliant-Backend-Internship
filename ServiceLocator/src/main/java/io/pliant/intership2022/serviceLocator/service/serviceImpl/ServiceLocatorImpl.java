@@ -74,6 +74,7 @@ public class ServiceLocatorImpl implements ServiceLocator {
 
     @Override
     public <T> T get(Class<T> serviceClass) throws ServiceLocatorException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+        T resultObject;
         Object service = serviceLocator.get(serviceClass.getSimpleName());
         if (!serviceLocator.containsKey(serviceClass.getSimpleName())) {
             throw new RegisterNotExistException(serviceClass.getSimpleName());
