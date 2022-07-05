@@ -79,10 +79,16 @@ public class ServiceLocatorImpl implements ServiceLocator {
             throw new RegisterNotExistException(serviceClass.getSimpleName());
         }
 
-        Object newInstance = Class.forName(((Class<?>) service).getName()).getConstructor().newInstance();
+        Object newInstance;
 
-        serviceLocator.replace(serviceClass.getSimpleName(), newInstance);
-        return (T) serviceLocator.get(serviceClass.getSimpleName());
+        try{
+            newInstance = Class.forName(((Class<?>) service).getName()).getConstructor().newInstance();
+
+            serviceLocator.replace(serviceClass.getSimpleName(), newInstance);
+            resultObject = (T) newInstance;
+        }catch (ErrorInstantiatingException e){
+            throw new ErrorInstantiatingException(serviceClass.getSimpleName());
+        }
     }
 
     @Override
